@@ -79,12 +79,20 @@
 	border-radius 0px
 	
 	.navbar-header {
-		position relative
-		left 615px
-		bottom 70px
+		position absolute
+		left 0px
+		bottom 65px
+		right 0px
+		margin 0 auto
+		float none
 		
 		.navbar-brand {
-			padding 12px 15px
+			padding 0px
+			float none
+
+			img{
+				margin 0px auto
+			}
 		}
 	}
 	.navbar-nav{
@@ -92,19 +100,22 @@
 		text-align center
 		
 		li{
-			padding 0 8px 26px
 			float none
 			display inline-block
 			a {
 				color white
 				font-size 18px
+				padding 26px 20px
 			}
 		}
+	}
+	.collapse.navbar-collapse{
+		margin-top 28px
 	}
 }
 
 /* mobile-responsive */
-@media only screen and (max-width: 769px){
+@media only screen and (max-width: 767px){
 
 /* navbar css */
 	.navbar-toggle{
@@ -139,7 +150,14 @@
 			li{
 				display block
 				padding 0px
+
+				a{
+					padding 10px
+				}
 			}
+		}
+		.collapse.navbar-collapse {
+			margin-top 0px
 		}
 	}
 
@@ -162,6 +180,9 @@
 		.glyph_right {
 			left -58px
 		}
+	}
+	.carousel-inner .read_more_btn{
+		border 2px solid white !important
 	}
 }
 
@@ -189,8 +210,17 @@
 		}
 	}
 }
-
-@media only screen and (min-width: 468px) and (max-width: 768px){
+@media only screen and (min-width: 768px) and (max-width: 780px){
+	/* navbar css */
+	.navbar-toggle{
+		display none
+	}
+	.navbar .navbar-nav li a {
+		font-size 17px
+		padding 27px 10px
+	}
+}
+@media only screen and (min-width: 468px) and (max-width: 769px){
 	/* slider css */
 	.carousel-inner {
 		
@@ -216,14 +246,7 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px){
-/* navbar css */
-.navbar{
-	 
-	 .navbar-header {
-		position relative
-		left 360px
-	}
-}
+
 /* slider css */
 	.carousel-inner {
 		
@@ -264,13 +287,7 @@
 	}
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1280px){
-	.navbar{
-		.navbar-header {
-			position relative
-			left 500px
-		}
-	}
+/* @media only screen and (min-width: 1025px) and (max-width: 1280px){
 	.carousel-inner{
 		.carousel-caption {
 			bottom 140px
@@ -296,16 +313,41 @@
 			top 272px
 		}
 	}
+} */
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px){
+
+	.carousel-inner{
+		.carousel-caption {
+			bottom 170px
+			left 12%
+
+			.banner_text {
+				font-size 45px
+			}
+
+			.sub_head {
+				font-size 32px
+			}
+
+			.read_more_btn {
+				font-size 18px
+			}
+		}
+	}
+
+	.carousel-control{
+		.glyphicon {
+			position relative
+			top 272px
+		}
+	}
 }
+
+
 
 /* client display */
 @media only screen and (min-width: 1280px) and (max-width: 1370px){
-	.navbar{
-		.navbar-header {
-			position relative
-			left 540px
-		}
-	}
 	.carousel-inner{
 		.carousel-caption {
 			bottom 160px
